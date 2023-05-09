@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-08T03:29:28 IST" name="Default suite" finished-at="2023-05-08T03:29:37 IST" duration-ms="9036">
+  <suite started-at="2023-05-09T23:27:03 IST" name="Default suite" finished-at="2023-05-09T23:27:09 IST" duration-ms="5720">
     <groups>
     </groups>
-    <test started-at="2023-05-08T03:29:28 IST" name="Default test" finished-at="2023-05-08T03:29:37 IST" duration-ms="9036">
-      <class name="com.srn.testaid.FirstAndroidTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.srn.testaid.FirstAndroidTest@202b0582]" started-at="2023-05-08T03:29:28 IST" name="setup" finished-at="2023-05-08T03:29:34 IST" duration-ms="6026" status="PASS">
+    <test started-at="2023-05-09T23:27:03 IST" name="Default test" finished-at="2023-05-09T23:27:09 IST" duration-ms="5720">
+      <class name="com.srn.testaid.ScrollMe">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srn.testaid.ScrollMe@202b0582]" started-at="2023-05-09T23:27:03 IST" name="setup" finished-at="2023-05-09T23:27:07 IST" duration-ms="4146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="click_app_button()[pri:0, instance:com.srn.testaid.FirstAndroidTest@202b0582]" started-at="2023-05-08T03:29:34 IST" name="click_app_button" finished-at="2023-05-08T03:29:37 IST" duration-ms="2808" status="PASS">
+        <test-method signature="letsScroll()[pri:0, instance:com.srn.testaid.ScrollMe@202b0582]" started-at="2023-05-09T23:27:07 IST" name="letsScroll" finished-at="2023-05-09T23:27:09 IST" duration-ms="1373" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '17.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [663b1783-f26d-4b28-8cfe-7603649f7662, findElement {using=accessibility id, value=Tabs}]
+Capabilities {appium:app: /Users/savinshetty/git/appi..., appium:appPackage: io.appium.android.apis, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/savinshetty/git/appi..., automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 10, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2142, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 663b1783-f26d-4b28-8cfe-7603649f7662]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '17.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [663b1783-f26d-4b28-8cfe-7603649f7662, findElement {using=accessibility id, value=Tabs}]
+Capabilities {appium:app: /Users/savinshetty/git/appi..., appium:appPackage: io.appium.android.apis, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/savinshetty/git/appi..., automationName: UiAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 10, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2142, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 663b1783-f26d-4b28-8cfe-7603649f7662
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at com.srn.testaid.ScrollMe.letsScroll(ScrollMe.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click_app_button -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srn.testaid.FirstAndroidTest@202b0582]" started-at="2023-05-08T03:29:37 IST" name="tearDown" finished-at="2023-05-08T03:29:37 IST" duration-ms="149" status="PASS">
+        </test-method> <!-- letsScroll -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srn.testaid.ScrollMe@202b0582]" started-at="2023-05-09T23:27:09 IST" name="tearDown" finished-at="2023-05-09T23:27:09 IST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.srn.testaid.FirstAndroidTest -->
+      </class> <!-- com.srn.testaid.ScrollMe -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
