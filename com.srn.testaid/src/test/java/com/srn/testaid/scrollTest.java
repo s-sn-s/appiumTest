@@ -31,7 +31,7 @@ public class scrollTest {
 	
 	@Test
 	public void testScrollToTab() throws InterruptedException {
-a.findElement(AppiumBy.accessibilityId("Views")).click();
+		a.findElement(AppiumBy.accessibilityId("Views")).click();
 		
 		WebElement VSlist = a.findElement(AppiumBy.id("android:id/list"));
 		
@@ -45,6 +45,7 @@ a.findElement(AppiumBy.accessibilityId("Views")).click();
 		PointerInput f = new PointerInput(Kind.TOUCH, "f");
 		
 		Sequence swipe = new Sequence(f, 1);
+		//swipe = new Seq
 		
 		swipe.addAction(f.createPointerMove(Duration.ofSeconds(0),PointerInput.Origin.viewport(),(int)centerx,(int)starty));
 		

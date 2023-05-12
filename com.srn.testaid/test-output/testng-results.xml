@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-11T23:57:41 IST" name="Default suite" finished-at="2023-05-11T23:57:53 IST" duration-ms="12350">
+  <suite started-at="2023-05-12T23:54:37 IST" name="Default suite" finished-at="2023-05-12T23:54:39 IST" duration-ms="2066">
     <groups>
     </groups>
-    <test started-at="2023-05-11T23:57:41 IST" name="Default test" finished-at="2023-05-11T23:57:53 IST" duration-ms="12350">
-      <class name="com.srn.testaid.scrollTest">
-        <test-method is-config="true" signature="driveSetup()[pri:0, instance:com.srn.testaid.scrollTest@74e28667]" started-at="2023-05-11T23:57:41 IST" name="driveSetup" finished-at="2023-05-11T23:57:45 IST" duration-ms="4340" status="PASS">
+    <test started-at="2023-05-12T23:54:37 IST" name="Default test" finished-at="2023-05-12T23:54:39 IST" duration-ms="2066">
+      <class name="com.srn.testaid.scrollTestiOS">
+        <test-method is-config="true" signature="setMeUp()[pri:0, instance:com.srn.testaid.scrollTestiOS@76b1e9b8]" started-at="2023-05-12T23:54:37 IST" name="setMeUp" finished-at="2023-05-12T23:54:39 IST" duration-ms="1963" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driveSetup -->
-        <test-method signature="testScrollToTab()[pri:0, instance:com.srn.testaid.scrollTest@74e28667]" started-at="2023-05-11T23:57:46 IST" name="testScrollToTab" finished-at="2023-05-11T23:57:53 IST" duration-ms="7718" status="PASS">
+        </test-method> <!-- setMeUp -->
+        <test-method signature="letScrollIos()[pri:0, instance:com.srn.testaid.scrollTestiOS@76b1e9b8]" started-at="2023-05-12T23:54:39 IST" name="letScrollIos" finished-at="2023-05-12T23:54:39 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScrollToTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srn.testaid.scrollTest@74e28667]" started-at="2023-05-11T23:57:53 IST" name="tearDown" finished-at="2023-05-11T23:57:53 IST" duration-ms="226" status="PASS">
+        </test-method> <!-- letScrollIos -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srn.testaid.scrollTestiOS@76b1e9b8]" started-at="2023-05-12T23:54:39 IST" name="tearDown" finished-at="2023-05-12T23:54:39 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.srn.testaid.scrollTest -->
+      </class> <!-- com.srn.testaid.scrollTestiOS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
