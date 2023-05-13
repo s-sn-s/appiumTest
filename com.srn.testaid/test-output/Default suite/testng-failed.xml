@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.srn.testaid.ScrollMe">
+      <class name="com.srn.testaid.scrollTestiOS">
         <methods>
-          <include name="letsScroll"/>
-          <include name="setup"/>
+          <include name="letScrollIos"/>
+          <include name="setMeUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.srn.testaid.ScrollMe -->
+      </class> <!-- com.srn.testaid.scrollTestiOS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
