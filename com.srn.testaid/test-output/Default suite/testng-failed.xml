@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.srn.testaid.scrollTestiOS">
+      <class name="com.srn.testaid.IOSexecuteScript">
         <methods>
-          <include name="letScrollIos"/>
-          <include name="setMeUp"/>
+          <include name="executeIOSscript"/>
+          <include name="iosSetup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.srn.testaid.scrollTestiOS -->
+      </class> <!-- com.srn.testaid.IOSexecuteScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

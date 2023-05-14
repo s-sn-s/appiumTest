@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Sequence;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
@@ -21,13 +22,15 @@ import io.appium.java_client.ios.options.XCUITestOptions;
 public class iOSelementsScroll {
 	
 	AppiumDriver ad;
+	SoftAssert sa;
 	
 	@BeforeTest
 	public void iOSsetup() throws MalformedURLException {
 		XCUITestOptions op = new XCUITestOptions();
-		op.setCapability("app", System.getProperty("user.DIR") +"/apps/iOS-Simulator-MyRNDemoApp.1.3.0-162.zip");
+		op.setCapability("app", System.getProperty("user.dir") +"/apps/iOS-Simulator-MyRNDemoApp.1.3.0-162.zip");
 		URL appLink = new URL("http://localhost:4723");
 		ad = new IOSDriver(appLink, op);
+		sa = new SoftAssert();
 	}
 	
 	@Test
@@ -36,7 +39,7 @@ public class iOSelementsScroll {
 		
 		double centerY = we.getRect().y + we.getSize().height/2;
 		
-		double leftX =  we.getRect().x + we.getSize().width*0.1;
+		double leftX =  we.getRect().x + we.getSize().width*0.01;
 		
 		double rightX =  we.getRect().x + we.getSize().width*0.9;
 		
@@ -48,15 +51,17 @@ public class iOSelementsScroll {
 		
 		swipe.addAction(finger1.createPointerDown(0));
 		
-		swipe.addAction(finger1.createPointerMove(Duration.ofMillis(0),PointerInput.Origin.viewport(),(int)rightX,(int)centerY));
+		swipe.addAction(finger1.createPointerMove(Duration.ofMillis(200),PointerInput.Origin.viewport(),(int)rightX,(int)centerY));
 		
 		swipe.addAction(finger1.createPointerUp(0));
 		
 		ad.perform(Arrays.asList(swipe));
 		
-		ad.findElement(AppiumBy.accessibilityId(null)).click();
+		ad.findElement(AppiumBy.accessibilityId("menu item webview")).click();
 		
-		String wv = ad.findElement(AppiumBy.accessibilityId(null)).getText();
+		String wv = ad.findElement(AppiumBy.accessibilityId("Webview")).getText();
+		
+		sa.assertEquals(wv, "Webview");
 		
 		System.out.println(wv);
 		
@@ -64,6 +69,7 @@ public class iOSelementsScroll {
 	
 	@AfterTest
 	public void iOSteardown() {
+		sa.assertAll("OPPS!!!");
 		ad.quit();
 	}
 
