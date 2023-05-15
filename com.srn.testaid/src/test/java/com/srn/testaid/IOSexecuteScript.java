@@ -29,11 +29,11 @@ public class IOSexecuteScript {
 	public void executeIOSscript() {
 		ad.executeScript(("mobile:scroll"), ImmutableMap.of("direction","down"));
 		ad.executeScript(("mobile:scroll"), ImmutableMap.of("direction","up"));
+		//swip
 	}
 	
 	@AfterTest
 	public void tearDown() {
 		ad.quit();
 	}
-
 }
